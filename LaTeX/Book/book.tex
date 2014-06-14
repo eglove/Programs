@@ -1,0 +1,31 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\pagestyle{fancy}
+\usepackage[a4paper, inner=1.5cm, outer=3cm, top=2cm, bottom=3cm, bindingoffset=1cm]{geometry}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter[Page Layout]{Exploring the page layout}
+In this chapter we will study the layout of pages.
+
+\section[Filler Text]{Some filler text}
+\blindtext
+
+\section[More]{A lot more filler text\protect\footnote{to fill the page}}
+
+More dummy text\footnote{serving as a placeholder} will follow.
+
+\subsection[Plenty]{Plenty of filler text}
+
+\blindtext[10]
+
+\end{document}

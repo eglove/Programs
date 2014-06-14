@@ -1,0 +1,17 @@
+Source:
+	http://github.com/IanDarwin/javasrc
+	http://github.com/IanDarwin/darwinsys-api
+
+"The Art of Computer Programming", Donald E. knuth
+"The Elements of Programming Style", Kenighan & Plauger
+"Software Tools and Software Tools in Pascal", Kenighan
+"The Practice of Programming", Brian
+"The Pragmatic Programmer", Andrew Hunt & David Thomas
+"Design Patterns", Gamma, Helm, Johnson, and Vlissides
+
+Android - AndroidCookbook.com
+
+"Java Swing" for GUI, also "Java Look and Feel Design Guidelines"
+"Java Network Programming"
+"Checking Java Programs with Open Source Tools"
+"Creating Effective JavaHelp"
