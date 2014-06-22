@@ -1,0 +1,28 @@
+-- add place down to clear space, it digs  one extra row
+	-- try dig 1 row, dig 2, -1, dig 2 pattern (simplify)
+
+-- create program to have turtle place torches every 7 blocks
+	-- if something is in front of it, go up
+	-- if nothing below go down
+	
+-- create liberateMe program that will dig stairs up
+
+-- program that moves forward until it runs into something, counts the blocks
+	(gets distance)
+	
+placeTorches
+
+Start (place torch where turtle is
+	0. Forward, turnaround, place torch, turnaround
+
+One row (get length from user)
+	2. Forward -> on 12th move, place torch in back
+	
+Next Row
+	3. Forward -> on 5th move, turn right (for 1 section, depending on size)
+		- or turn left depending on modulus
+	4. Forward -> on 8th move, place torch in back
+	
+Second row
+	5. Turn left,  forward, turn right, forward, turn left (in front of torch)
+	6. Forward -> on 12th move, place torch in back 
