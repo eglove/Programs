@@ -1,5 +1,4 @@
 -- add place down to clear space, it digs  one extra row
-	-- try dig 1 row, dig 2, -1, dig 2 pattern (simplify)
 
 -- create program to have turtle place torches every 7 blocks
 	-- if something is in front of it, go up

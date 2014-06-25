@@ -3,11 +3,15 @@ function turnAround()
 	turtle.turnLeft()
 end
 
-function forward(n) -- Forwage and dig
+function sandDig()
+	while turtle.detect() do
+		turtle.dig()
+	end
+end
+
+function forward(n) -- Forwad and dig
 	for i=1,n do
-		if turtle.detect() then
-			turtle.dig()
-		end
+		sandDig()
 		turtle.forward()
 	end
 end
@@ -20,8 +24,8 @@ end
 
 function digL() -- Dig length
 	if l > 0 then
-		for i = 1,l do
-			turtle.dig()
+		for i = 1,l-1 do
+			sandDig()
 			turtle.forward()
 		end
 	end
@@ -30,12 +34,12 @@ end
 function nextRow()
 	if count % 2 == 0 then -- Right for even number rows
 		turtle.turnRight()
-		turtle.dig()
+		sandDig()
 		turtle.forward()
 		turtle.turnRight()
 	else -- Left for odd number rows
 		turtle.turnLeft()
-		turtle.dig()
+		sandDig()
 		turtle.forward()
 		turtle.turnLeft()
 	end
