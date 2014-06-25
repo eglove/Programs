@@ -1,0 +1,23 @@
+body { background-color: #ffffff;
+	color: #000000;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.logo { background-color: #ffffff;
+	color: #336633;
+	font-family: Georgia, Times New Roman, serif;
+}
+
+#nav { font-weight: bold;
+}
+
+.category { font-weight: bold;
+	font-family: serif;
+	background-color: #ffffff;
+	color: #336633;
+	font-size: 1.2em;
+}
+
+footer { font-size: .60em;
+	font-style: italic;
+}

@@ -1,0 +1,27 @@
+body { background-color: #6699ff;
+	color: #d5e3ff;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+h1 { background-color: #6699ff;
+	color: #003366;
+	font-family: serif;
+	line-height: 200%;
+}
+
+#nav { font-weight: bold;
+}
+
+.category { font-weight: bold;
+	background-color: #6699ff;
+	color: #003366;
+	font-size: 1.1em;
+}
+
+footer { font-size: .70em;
+	font-style: italic;
+}
+
+#container { width: 80%;
+	margin-left: auto;
+	margin-right: auto;}
