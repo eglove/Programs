@@ -1,13 +1,21 @@
 body { background-color: #ffffcc;
 	color: #330000;
 	font-family: Verdana, Arial, sans serif;
+	background-image: url('background.gif');
 }
 
 h1 { background-color: #ccaa66;
 	color: #000000;
-	line-height: 200%;
 	text-align: center;
 }
+
+h2 { background-color: #ccaa66;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+img { border: none; }
 
 #nav { text-align: center;
 }
@@ -22,4 +30,14 @@ h1 { background-color: #ccaa66;
 #container{ width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffcc;
+	min-width: 700px;
+}
+
+#content { padding-left: 20px;
+	padding-right: 20px;
+}
+
+.details { padding-left: 20%;
+	padding-right: 20%;
 }
