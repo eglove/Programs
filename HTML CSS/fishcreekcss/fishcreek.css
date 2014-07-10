@@ -3,15 +3,14 @@ body { background-color: #6699ff;
 	font-family: Verdana, Arial, sans-serif;
 }
 
-h1 { background-color: #6699ff;
+header { background-color: #6699ff;
 	color: #003366;
 	font-family: serif;
-	line-height: 200%;
-	text-align: center;
 }
 
-#nav { font-weight: bold;
-}
+h1 { line-height: 200%; }
+
+nav { font-weight: bold; }
 
 .category { font-weight: bold;
 	background-color: #6699ff;
@@ -23,11 +22,7 @@ footer { font-size: .70em;
 	font-style: italic;
 }
 
-#container { width: 700px;
-	margin-left: auto;
+#wrapper { width: 80%;
 	margin-right: auto;
+	margin-left: auto;
 }
-
-#imgnav { text-align: center; }
-
-img { border: none; }

@@ -3,6 +3,10 @@ body { background-color: #ffffcc;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+header { background-color: #ffffcc;
+	color: #48751a;
+}
+
 h2 { background-color: #ffffcc;
 	color: #003366;
 }
@@ -11,17 +15,13 @@ h3 { background-color: #ffffcc;
 	color: #006600;
 }
 
+nav { font-weight: bold;
+	font-size: 1.2em;
+}
+
 dd { font-style: italic;
 	font-size: .90em;
 	line-height: 200%;
-}
-
-nav { font-weight: bold;
-	font-size: .70em;
-}
-
-.logo { background-color: #ffffcc;
-	color: #48751a;
 }
 
 .contact { font-weight: bold;
@@ -29,12 +29,11 @@ nav { font-weight: bold;
 	font-family: Times New Roman, serif;
 }
 
-.property { padding-right: 30px;
-	padding-top: 5px;
-}
-
 footer { font-size: .60em;
 	font-style: italic;
 }
 
-img { border: none; }
+#wrapper { width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
