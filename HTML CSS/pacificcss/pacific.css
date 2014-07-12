@@ -1,4 +1,5 @@
 body { background-color: #ffffff;
+	background-image: url('background.jpg')
 	color: #666666;
 	font-family: Verdana, Arial, sans-serif;
 }
@@ -8,14 +9,28 @@ header { background-color: #000033;
 	font-family: Georgia, serif;
 }
 
-h1 { line-height: 200%; }
+h1 { line-height: 200%; 
+	background-image: url('sunset.jpg');
+	background-repeat: no-repeat;'
+	background-position: right;
+	padding-left: 20px;
+	height: 72px;
+	margin-bottom: 0;
+}
 
 nav { font-weight: bold;
 	background-color: #90c7e3;
+	padding: 5px;
 }
 
 h2 { color: #3399cc;
 	font-family: Georgia, serif;
+}
+
+h3 { color: #000033; }
+
+main { padding-left: 20px;
+	padding-right: 20px;
 }
 
 dt { color: #000033;
@@ -29,9 +44,14 @@ dt { color: #000033;
 footer { font-size: .70em;
 	font-style: italic;
 	text-align: center;
+	padding: 10px;
 }
 
 #wrapper { width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffff;
+	min-width: 700px;
+	max-width: 1024px;
+	box-shadow: 1px 1px 1px #666;
 }

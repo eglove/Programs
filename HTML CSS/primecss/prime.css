@@ -1,23 +1,24 @@
-body { background-color: #ffffcc;
+body { background-image: url('primevertical.png');
+	background-color: #000033;
 	color: #003300;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-header { background-color: #ffffcc;
-	color: #48751a;
+header { color: #48751a;
 }
 
-h2 { background-color: #ffffcc;
-	color: #003366;
+h2 { color: #003366;
 }
 
-h3 { background-color: #ffffcc;
-	color: #006600;
+h3 { color: #006600;
+	padding-top: 10px;
 }
 
 nav { font-weight: bold;
 	font-size: 1.2em;
 }
+
+img { border: none; }
 
 dd { font-style: italic;
 	font-size: .90em;
@@ -36,4 +37,15 @@ footer { font-size: .60em;
 #wrapper { width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #ffffcc;
+	min-width: 700px;
+	max-width: 960px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border-color: #00332b;
+	border-radius: 10px; 
+	border-style: ridge;
+	box-shadow: inset -3px -3px 3px 3px #00332b;
 }
