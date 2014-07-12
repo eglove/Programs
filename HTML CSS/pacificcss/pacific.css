@@ -19,9 +19,23 @@ h1 { line-height: 200%;
 }
 
 nav { font-weight: bold;
-	background-color: #90c7e3;
-	padding: 5px;
+	float: left;
+	width: 160px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 20px;
 }
+
+nav ul { list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav a { text-decoration: none; }
+nav a:link { color: #000033; }
+nav a:visited: { color: #344873; }
+nav a:hover: { color: #000033; }
 
 h2 { color: #3399cc;
 	font-family: Georgia, serif;
@@ -31,26 +45,43 @@ h3 { color: #000033; }
 
 main { padding-left: 20px;
 	padding-right: 20px;
+	background-color: #ffffff;
+	margin-left: 170px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 }
+
+main img { float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+main ul { list-style-position: inside; }
 
 dt { color: #000033;
 	font-weight: bold;
 }
 
+header, nav, main, footer { display: block; }
+
 .resort { color: #000033;
 	font-size: 1.2em;
 }
+
+.clear { clear: both; }
 
 footer { font-size: .70em;
 	font-style: italic;
 	text-align: center;
 	padding: 10px;
+	background-color: #ffffff;
+	margin-left: 170px;
 }
 
 #wrapper { width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ffffff;
+	background-color: #90c7e3;
 	min-width: 700px;
 	max-width: 1024px;
 	box-shadow: 1px 1px 1px #666;

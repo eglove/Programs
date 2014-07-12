@@ -5,6 +5,14 @@ body { background-image: url('primevertical.png');
 }
 
 header { color: #48751a;
+	background-image: url('primelogo.gif');
+	background-repeat: no-repeat;
+	height: 100px;
+}
+
+h1 { text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 h2 { color: #003366;
@@ -14,9 +22,34 @@ h3 { color: #006600;
 	padding-top: 10px;
 }
 
+main { margin-left: 180px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
 nav { font-weight: bold;
 	font-size: 1.2em;
+	float: left;
+	width: 150px;
 }
+
+nav a { text-decoration: none;
+	display: block;
+	text-align: center;
+	color: #ffffcc;
+	font-weight: bold;
+	border: 3px outset #cccccc;
+	padding: 5px;
+}
+
+nav ul { list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav a:link { background-color: #003366; }
+nav a:visited { background-color: #48751a; }
+nav a:hover { border: 3px inset #333333; }
 
 img { border: none; }
 
@@ -25,13 +58,23 @@ dd { font-style: italic;
 	line-height: 200%;
 }
 
+header, nav, main, footer { display: block; }
+
 .contact { font-weight: bold;
 	font-size: .90em;
 	font-family: Times New Roman, serif;
 }
 
+.floatleft { float: left;
+	padding-bottom: 20px;
+}
+
+.clear { clear: left; }
+
 footer { font-size: .60em;
 	font-style: italic;
+	clear: both;
+	margin-left: 180px;
 }
 
 #wrapper { width: 80%;

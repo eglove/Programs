@@ -1,25 +1,43 @@
 body { background-color: #6699ff;
+	background-image: url('gradientblue.jpg');
 	color: #d5e3ff;
 	font-family: Verdana, Arial, sans-serif;
 }
 
-header { background-color: #6699ff;
-	color: #003366;
-	font-family: serif;
+header { background-color: #000066;
+	color: #ffffff;
+	background-image: url('bigfish.gif');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-h1 { line-height: 200%;
+h1 { line-height: 150%;
 	text-align: center;
+	font-size: 3em;
+	padding: 10px;
+	text-shadow: #cccccc;
+}
+
+main { margin-left: 180px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 nav { font-weight: bold;
-	text-align: center;
+	float: left;
+	width: 150px;
 }
+
+nav ul { list-style-type: none; }
+nav a { text-decoration: none; }
+nav a:link { background-color: #3262a3; }
+nav a:visited { background-color: #6699ff; }
+nav a:hover { background-color: #cccccc; }
 
 img { border: none; }
 
 .category { font-weight: bold;
-	background-color: #6699ff;
+	background-color: #ffffff;
 	color: #003366;
 	font-size: 1.1em;
 	text-shadow: 1px 1px 1px #666;
@@ -27,13 +45,19 @@ img { border: none; }
 
 footer { font-size: .70em;
 	font-style: italic;
+	padding: 10px;
+	margin-left: 180px;
 }
 
 footer nav { text-align: left; }
+
+header, nav, main, footer { display: block; }
 
 #wrapper { width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	min-width: 700px;
 	max-width: 1024px;
+	background-color: #ffffff;
+	color: #000066;
 }
