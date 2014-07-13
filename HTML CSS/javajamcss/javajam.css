@@ -5,11 +5,13 @@ body { background-color: #ffffcc;
 }
 
 header { background-color: #ffffcc;
+	background-size: cover;
 	color: #000000;
 	height: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	background-image: url('javalogo.gif');
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -22,6 +24,7 @@ h1 { margin: 0;
 
 h2 { text-transform: uppercase;
 	background-color: #ffffcc;
+	background-size: cover;
 	color: #663300;
 	font-size: 1.2em;
 	border-bottom: 1px solid #000000;
@@ -48,6 +51,7 @@ nav a:hover { background-color: #330000; }
 nav ul { list-style-type: none; }
 
 footer { background-color: #ccaa66;
+	background-size: cover;
 	color: #000000;
 	font-size: .60em;
 	font-style: italic;
@@ -67,6 +71,7 @@ main { padding-top: 10px;
 	padding-right: 20px;
 	margin-left: 150px;
 	background-color: #f2eab7;
+	background-size: cover;
 	color: #000000;
 	overflow: auto;
 }
@@ -91,7 +96,40 @@ header, nav, main, footer { display: block; }
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #ffffcc;
+	background-size: cover;
 	min-width: 700px;
 	max-width: 1024px;
 	box-shadow: 1px 1px 1px #666;
+}
+
+#mobile { display: none; }
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+	body { margin: 0; background-image: none; }
+	#wrapper { width: auto; min-width: 0; margin: 0;
+		box-shadow: none; }
+	header { background-image: url(javalogomobile.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 80px; }
+	nav { float: none; width: auto; padding-top: 0; margin-top: 0; }
+	nav li { display: inline-block; }
+	nav a { padding: 1em; font-size: 1.3em; width: 8em;
+		font-weight: bold; border-style: none; }
+	nav ul { padding: 0; margin: 0; }
+	main { padding: 2em; margin: 0; font-size: 90%; }
+}
+
+@media only screen and (max-width: 768px) {
+	nav a { display: block; padding: 0.2em; width: auto;
+		border-bottom: 1px; border-color: #330000; }
+	nav li { display: block; }
+	h2 { padding-top: 0.5em; padding-right: 0; padding-bottom: 0;
+		padding-left: 0.5em; margin-right: 0.5em; }
+	.details { padding-left: 0; padding-right: 0; }
+	.floatright { display: none; }
+	.floatleft { padding-right: 0.5em; padding-left: 0.5em; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
 }
