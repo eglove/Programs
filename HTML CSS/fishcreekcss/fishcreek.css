@@ -15,7 +15,7 @@ h1 { line-height: 150%;
 	text-align: center;
 	font-size: 3em;
 	padding: 10px;
-	text-shadow: #cccccc;
+	text-shadow: 2px 2px #cccccc;
 }
 
 main { margin-left: 180px;
@@ -60,4 +60,71 @@ header, nav, main, footer { display: block; }
 	max-width: 1024px;
 	background-color: #ffffff;
 	color: #000066;
+}
+
+#mobile { display: none; }
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;
+		padding: 0;
+		background-color: white;
+		background-image: none;
+	}
+	#wrapper { width: auto;
+		min-width: 0;
+		margin: 0;
+	}
+	h1 { margin: 0;
+		text-align: center;
+		font-size: 2em;
+		line-height: 200%;
+	}
+	nav { float: none;
+		width: auto;
+	}
+	nav li { display: inline-block;
+	}
+	nav a { padding: 1em;
+		border-style: none;
+		font-size: 1.2em;
+	}
+	nav ul { text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	main { margin: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 90%;
+	}
+	dd { margin-bottom: 1em;
+	}
+	footer { margin: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header { background-image: url(lilfish.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	h1 { font-size: 1.5em;
+		line-height: 120%;
+	}
+	nav a { display: block;
+		padding: 0.2em;
+		font-size: 1.3em;
+		border-bottom: 1px;
+		border-color: #330000;
+	}
+	nav li { display: block; }
+	nav ul { text-align: left; }
+	main { padding-left: 0.4em; }
+	.category { text-shadow: none; }
+	footer { padding: 0; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
 }

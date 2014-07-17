@@ -92,3 +92,78 @@ footer { font-size: .60em;
 	border-style: ridge;
 	box-shadow: inset -3px -3px 3px 3px #00332b;
 }
+
+#mobile { display: none; }
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+	body { margin: 0;
+		padding: 0;
+		background-color: #ffffcc;
+		background-image: none;
+	}
+	#wrapper { width: 100%;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+		border-radius: 0;
+		border-style: none;
+	}
+	header { background-image: url(primemobile.gif);
+		background-repeat: no-repeat;
+		text-shadow: 2px 2px #000033;
+		height: 100%;
+	}
+	h1 { margin: 0;
+		text-indent: 0;
+		font-size: 3.7em;
+		padding-left: 2em;
+		white-space: normal;
+	}
+	nav { float: none;
+		width: auto;
+		margin-top: 0.5em;
+	}
+	nav a { padding: 0.2em;
+		margin-left: 0.3em;
+		float: left;
+		width: 20%;
+	}
+	main { padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin: 0;
+		font-size: 90%;
+		clear: both;
+	}
+}
+
+@media only all and (max-width: 768px) {
+	h1 { font-size: 2.4em;
+		padding-top: 0.25em;
+		padding-left: 1.5em;
+	}
+	nav { width: 98%; }
+	nav a { padding: 0.5em;
+		width: 40%;
+		float: left;
+		min-width: 5em;
+		margin-left: 0.5em;
+	}
+	main { padding: 0.6em; }
+	.floatleft { float: none;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	h3 { padding: 0;
+		margin: 0;
+	}
+	dd { line-height: 100% }
+	footer { padding: 0.5em;
+		margin: 0;
+	}
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
