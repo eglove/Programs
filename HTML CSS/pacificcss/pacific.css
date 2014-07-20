@@ -79,6 +79,18 @@ dt { color: #000033;
 
 header, nav, main, footer { display: block; }
 
+label {
+	float: left;
+	display: block;
+	width: 8em;
+	padding-right: 5px;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
 .resort { color: #000033;
 	font-size: 1.2em;
 }
@@ -106,6 +118,7 @@ footer { font-size: .70em;
 
 #mobile { display: none; }
 #desktop { display: inline; }
+#mySubmit { margin-left: 10em; }
 
 @media only screen and (max-width: 1024px) {
 	body { margin: 0;

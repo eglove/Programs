@@ -90,6 +90,19 @@ img { border: none; }
 
 header, nav, main, footer { display: block; }
 
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 5px;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
 .details { padding-left: 20%;
 	padding-right: 20%;
 	overflow: auto;
@@ -114,6 +127,7 @@ header, nav, main, footer { display: block; }
 
 #mobile { display: none; }
 #desktop { display: inline; }
+#mySubmit { margin-left: 12em; }
 
 @media only screen and (max-width: 1024px) {
 	body { margin: 0; background-image: none; }

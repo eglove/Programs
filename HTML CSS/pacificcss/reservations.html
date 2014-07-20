@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="pacific.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Pacific Trails Resort :: Reservations</title>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<header>
+			<h1>Pacific Trails Resort :: Reservations</h1>
+			<nav><ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="yurts.html">Yurts</a></li>
+			<li><a href="activities.html">Activities</a></li>
+			<li><a href="reservations.html">Reservations</a></li>
+			</ul></nav>
+		</header>
+		
+		<main>
+			<h2>Reservations at Pacific Trails</h2>
+			<h3>Contact Us</h3>
+			<p>Required information is marked with an asterisk (*).</p>
+			<form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+				<label for="myFName">*First Name:</label>
+					<input type="text" name="myFName" required>
+				<label for="myLName">*Last Name:</label>
+					<input type="text" name="myLName" required>
+				<label for="myEmail">*E-Mail:</label>
+					<input type="email" name="myEmail" required>
+				<label for="myPhone">Phone:</label>
+					<input type="tel" name="myPhone">
+				<label for="myDate">Arrival Date</label>
+					<input type="date" name="myDate">
+				<label for="myLength">Nights</label>
+					<input type="number" name="myLength">
+				<label for="myComments">*Comments:</label>
+					<input type="text" name="myComments" required>
+				<input type="submit" id="mySubmit" name="mySubmit">
+			</form>
+		</main>
+	
+	<footer>
+		Copyright &copy; 2014 Pacific Trails Resort<br/>
+		<a href="mailto:glover.ethan@gmail.com">Ethan Glover</a>
+	</footer>
+	</div>
+	</body>
+</html>

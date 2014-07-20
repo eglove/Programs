@@ -46,6 +46,19 @@ nav a:hover { background-color: #cccccc; }
 
 img { border: none; }
 
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 5px;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
 .category { font-weight: bold;
 	background-color: #ffffff;
 	color: #003366;
@@ -74,6 +87,7 @@ header, nav, main, footer { display: block; }
 
 #mobile { display: none; }
 #desktop { display: inline; }
+#mySubmit { margin-left: 10em; }
 
 @media only screen and (max-width: 1024px) {
 	body { margin: 0;
@@ -104,7 +118,7 @@ header, nav, main, footer { display: block; }
 		margin: 0;
 	}
 	main { margin: 0;
-		padding-top: 0;
+		padding-top: 25px;
 		padding-bottom: 0;
 		padding-left: 1em;
 		padding-right: 1em;

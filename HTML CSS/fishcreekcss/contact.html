@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="fishcreek.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Fish Creek Animal Hospital Contact</title>
+	</head>
+	<body>
+	<div id="wrapper">
+		<header>
+			<h1>Contact</h1>
+			<nav>
+				<ul>
+				<li><a href="index.html"><img src="home.gif" alt="Home" width="132" height="27"/></a></li>
+				<li><a href="services.html"><img src="services.gif" alt="Services" width="132" height="27"/></a></li>
+				<li><a href="askvet.html"><img src="askthevet.gif" alt="Ask the Vet" width="132" height="27"/></a></li>
+				<li><a href="contact.html"><img src="contact.gif" alt="Contact" width="132" height="27"/></a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<p>Required fields are marked with an asterisk (*).</p>
+			<form method="post" action="http://webdevbasics.net/scripts/fishcreek.php">
+				<label for="myName">*Name:</label>
+					<input type="text" name="myName" required>
+				<label for="myEmail">*E-Mail:</label>
+					<input type="email" name="myEmail" required>
+				<label for="myComments">*Comments:</label>
+					<input type="text" name="myComments" rows="2" cols="20" required>
+				<input id="mySubmit" type="submit" value="Send Now" name="mySubmit">
+			</form>
+		</main>
+		
+		<footer>
+			Copyright &copy; 2014 Fish Creek Animal Hospital<br/>
+			<a href="mailto:glover.ethan@gmail.com">Ethan Glover</a>
+		</footer>
+	</div>
+	</body>
+</html>
