@@ -51,6 +51,21 @@ main { padding-left: 20px;
 	padding-bottom: 1px;
 }
 
+table {
+	border: 1px solid #3399cc;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+table td { text-align: center; }
+
+table td, table th {
+	padding: 5px;
+	border: 1px solid #3399cc;
+}
+
+table tr:nth-of-type(even) { background-color: #f5fafc; }
+
 main img { float: left;
 	padding-right: 20px;
 	padding-bottom: 20px;
@@ -69,6 +84,8 @@ header, nav, main, footer { display: block; }
 }
 
 .clear { clear: both; }
+
+.text { text-align: left; }
 
 footer { font-size: .70em;
 	font-style: italic;

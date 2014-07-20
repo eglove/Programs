@@ -76,6 +76,16 @@ main { padding-top: 10px;
 	overflow: auto;
 }
 
+table {
+	margin: auto;
+	width: 90%;
+	border-spacing: 0;
+	background-color: #ffffcc;
+}
+
+table td, table th { padding: 10px; }
+table tr:nth-of-type(odd) { background-color: #ccaa66; }
+
 img { border: none; }
 
 header, nav, main, footer { display: block; }

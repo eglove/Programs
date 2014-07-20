@@ -23,6 +23,16 @@ main { margin-left: 180px;
 	padding-bottom: 20px;
 }
 
+table { 
+	border: 2px solid blue;
+	border-collapse: collapse;
+}
+
+table td, table th {
+	padding: 0.5em;
+	border: 1px solid blue;
+}
+
 nav { font-weight: bold;
 	float: left;
 	width: 150px;
