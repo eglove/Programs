@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<style>
+		#gallery { position: relative; }
+		#gallery ul {
+			width: 250px;
+			list-style-type: none;
+		}
+		#gallery li {
+			display: inline-block;
+			padding: 10px;
+		}
+		#gallery img { border-style: none; }
+		#gallery a {
+			text-decoration: none;
+			color: #333;
+			font-style: italic;
+		}
+		#gallery span { display: none; }
+		#gallery a:hover span {
+			display: block;
+			position: absolute;
+			top: 10px;
+			left: 300px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<div id="gallery">
+		<ul>
+			<li>
+				<a href="photo1.jpg"><img src="photo1thumb.jpg"
+				width="100" height="75" alt="Golden Gate Bridge">
+				<span><img src="photo1.jpg" width="250" height="150"
+				alt="Golden Gate Bridge"><br>Golden Gate Bridge</span>
+			</li>
+			<li>
+				<a href="photo2.jpg"><img src="photo2thumb.jpg"
+				width="100" height="75" alt="Photo 2">
+				<span><img src="photo2.jpg" width="250" height="150"
+				alt="Photo 2"><br>Photo 2</span>
+			</li>
+			<li>
+				<a href="photo3.jpg"><img src="photo3thumb.jpg"
+				width="100" height="75" alt="Photo 3">
+				<span><img src="photo3.jpg" width="250" height="150"
+				alt="Photo 3"><br>Photo 3</span>
+			</li>
+			<li>
+				<a href="photo4.jpg"><img src="photo4thumb.jpg"
+				width="100" height="75" alt="Photo 4">
+				<span><img src="photo4.jpg" width="250" height="150"
+				alt="Photo 4"><br>Photo 4</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
