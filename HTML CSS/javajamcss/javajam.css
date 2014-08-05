@@ -103,6 +103,11 @@ input, textarea {
 	margin-bottom: 1em;
 }
 
+audio {
+	display: block;
+	margin-top: 1em;
+}
+
 .details { padding-left: 20%;
 	padding-right: 20%;
 	overflow: auto;
