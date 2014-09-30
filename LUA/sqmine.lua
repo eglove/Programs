@@ -26,7 +26,7 @@ tunnelFor() -- Tunnel forward if inventory is good
 	while(turtle.getItemCount(16) > 0) do
 		gravelDig()
 		turtle.forward()
-		gravel.DigUp()
+		turtle.digUp()
 		count=count+1
 		if count % 7 == 0 then
 			torch()
