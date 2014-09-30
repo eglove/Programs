@@ -3,8 +3,10 @@ function driver(n) -- Drives whole program
 		tunnel(n)
 	end
 	tunnelLastWall(n)
-	for i = 1,3 do
-		tunnelFor()
+	if(n >= 6) then
+		for i = 1,3 do
+			tunnelFor()
+		end
 	end
 end
 
@@ -22,17 +24,15 @@ function tunnelLastWall(n) -- Dig fourth tunnel (shorter than normal tunnel)
 	turtle.turnRight()
 end
 
-tunnelFor() -- Tunnel forward if inventory is good
-	while(turtle.getItemCount(16) > 0) do
-		gravelDig()
-		turtle.forward()
-		turtle.digUp()
-		count=count+1
-		if count % 7 == 0 then
-			torch()
-		end
-		checkWalls()
+function tunnelFor() -- Tunnel forward
+	gravelDig()
+	turtle.forward()
+	turtle.digUp()
+	count = count + 1
+	if count % 7 == 0 then
+		torch()
 	end
+	checkWalls()
 end
 
 function checkWalls() -- Fill in walls to avoid water/lave problems
@@ -46,7 +46,7 @@ function checkWalls() -- Fill in walls to avoid water/lave problems
 	detectAndPlace()
 	gravelDigUp()
 	turtle.up()
-	if(turtle.detectUp == false) then
+	if(turtle.detectUp() == false) then
 		turtle.placeUp()
 	end
 	detectAndPlace()
@@ -54,6 +54,14 @@ function checkWalls() -- Fill in walls to avoid water/lave problems
 	detectAndPlace()
 	turtle.turnRight()
 	turtle.down()
+end
+
+function torch() -- Place torch every 7 spots
+	turtle.select(1)
+	turtle.turnLeft()
+	gravelDig()
+	turtle.place()
+	turtle.turnRight()
 end
 
 function turnAround() -- 180 degree turn
@@ -67,24 +75,25 @@ function detectAndPlace() -- Place block if nothing there
 	end
 end
 
-gravelDig() -- Dig forward, check for gravel/sand
+function gravelDig() -- Dig forward, check for gravel/sand
 	while(turtle.detect()) do
 		turtle.dig()
 	end
 end
 
-gravelDigUp() -- Dig up, checking for gravel/sand
+function gravelDigUp() -- Dig up, checking for gravel/sand
 	while(turtle.detectUp()) do
 		turtle.digUp()
 	end
 end
 
 local n
+count = 0
 print("Torches in slot 1. Cobblestone in slot 2.");
 print("Enter size of square mine.");
 n = tonumber(read())
 
-while n >= do
+while(n >= 0) do
 	driver(n)
 	n = n - 6
 end
