@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Analysis of Examination Results</title>
+		<script>
+			var passes = 0;
+			var failures = 0;
+			var student = 1;
+			var result;
+			
+			while(student <= 10) {
+				result = window.prompt("Enter result (1=pass,2-fail)", "0");
+				
+				if(result=="1") {
+					passes = passes + 1;
+				} else {
+					failures = failures + 1;
+				}
+				
+				student = student + 1;
+			}
+			
+			document.writeln("<h1>Examination Results</h1>");
+			document.writeln("<p>Passed: " + passes +
+				"; Failed: " + failures + "</p>");
+				
+			if(passes > 8)
+				document.writeln("<p>Bonus to instructor!</p>");
+		</script>
+	</head><body></body>
+</html>

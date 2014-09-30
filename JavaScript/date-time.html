@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Using Relational Operators</title>
+		<script type="text/javascript">
+			var name; // string entered by user
+			var now = new Date(); // current date and time
+			var hour = now.getHours(); // current hour (0-23)
+			
+			name = window.prompt("Please enter your name");
+			
+			if(hour<12) {
+				document.write("<h1>Good Morning, ");
+			}
+			if(hour>=12) {
+				hour=hour-12;
+				if(hour<6) {
+					document.write("<h1>Good Afternoon, ");
+				}
+				if(hour>=6) {
+					document.write("<h1>Good Evening,  ");
+				}
+			}
+			
+			document.writeln(name + ", welcome to JavaScript programming!</h1>");
+		</script>
+	</head><body></body>
+</html>

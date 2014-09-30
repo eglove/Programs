@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Class Average Program</title>
+		<script>
+			var total; // sum of grades
+			var gradeCounter; // number of grades entered
+			var grade; // grade typed by user (as a string)
+			var gradeValue; // grade value (converted to integer)
+			var average; // average of all grades
+			
+			total = 0;
+			gradeCounter = 1;
+			
+			while(gradeCounter <= 10) {
+				grade = window.prompt("Enter integer grade:", "0");
+				gradeValue = parseInt(grade);
+				total = total + gradeValue;
+				gradeCounter = gradeCounter+1;
+			}
+			
+			average = total / 10;
+			document.writeln(
+				"<h1>Class average is " + average + "</h1");
+		</script>
+	</head><body></body>
+</html>
