@@ -12,14 +12,14 @@ public class ContiguousSubarray {
 		Arrays.sort(test2);
 		
 		// Count for contiguous subarrays
-		int cTest1 = count(test1);
-		int cTest2 = count(test2);
+		int cTest1 = contiguousCount(test1);
+		int cTest2 = contiguousCount(test2);
 		
 		System.out.println("Length of longest contiguous subarray is " + cTest1);
 		System.out.println("Length of longest contiguous subarray is " + cTest2);
 	}
 	
-	public static int count(int[] list) {
+	public static int contiguousCount(int[] list) {
 		int count=1, largest=0;
 		
 		for(int i = 0, j=1; j < list.length; i++, j++) {
